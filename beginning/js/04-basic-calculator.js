@@ -10,34 +10,34 @@
 // 7. Figure out how to make it so that if the user doesn’t enter either add, subtract, multiply, or divide, they are displayed an alert message telling them that. Then you’ll have to rerun the application so that the application asks the user for the numbers and operation once more.
 
 let num1, num2, operation, answer;
-let looping = true;
+let loop = true;
 
 function calculate(one, two, three) {
-    while(looping) {
+    while(loop) {
         num1 = window.prompt("Enter a number");
         num2 = window.prompt("Enter second number");
-        oper = window.prompt("To add enter +" + 
+        operation = window.prompt("To add enter +" + 
                              "To subtract enter - " + 
                              "To multiply enter * " + 
                              "To divide enter / " + 
                              "To stop enter 'stop' ");
         switch(operation) {
             case "+": 
-                answ = Number(num1) + Number(num2);
+                ans = Number(num1) + Number(num2);
                 window.document.write("Your answer is " + answer + "<br>")
                 break;
             case "-":
-                answ = Number(num1) - Number(num2);
+                ans = Number(num1) - Number(num2);
                 window.document.write("Your answer is " + answer + "<br>")
                 break;
     
             case "*":
-                answ = Number(num1) * Number(num2);
+                ans = Number(num1) * Number(num2);
                 window.document.write("Your answer is " + answer + "<br>")
                 break;
     
             case "/":
-                answ = Number(num1) / Number(num2);
+                ans = Number(num1) / Number(num2);
                 window.document.write("Your answer is " + answer + "<br>")
                 break;
             case "stop":
