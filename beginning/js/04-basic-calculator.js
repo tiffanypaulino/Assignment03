@@ -23,31 +23,30 @@ function calculate(one, two, three) {
                              "To stop enter 'stop' ");
         switch(operation) {
             case "+": 
-                ans = Number(num1) + Number(num2);
+                let ans = Number(num1) + Number(num2);
                 window.document.write("Your answer is " + answer + "<br>")
                 break;
             case "-":
-                ans = Number(num1) - Number(num2);
+                let ans = Number(num1) - Number(num2);
                 window.document.write("Your answer is " + answer + "<br>")
                 break;
     
             case "*":
-                ans = Number(num1) * Number(num2);
+                let ans = Number(num1) * Number(num2);
                 window.document.write("Your answer is " + answer + "<br>")
                 break;
     
             case "/":
-                ans = Number(num1) / Number(num2);
+                let ans = Number(num1) / Number(num2);
                 window.document.write("Your answer is " + answer + "<br>")
                 break;
             case "stop":
-                looping = false;
+                loop = false;
                 break;
             default:
                 alert("Enter + - * or /");
                 continue;
-            }  
     }
-}
+};
 calculate (num1, num2, operation); 
-window.document.write("Your answer is " + answer)
+window.document.write("Your answer is " + answer);
